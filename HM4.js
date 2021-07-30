@@ -1,3 +1,5 @@
+//TODO: Excellent job,Dvir!! Please see my (very minor) comments
+
 // The number 10 will be printed 10 times.
 const callbacks = [];
 for (var i = 0; i < 10; i++) {
@@ -31,7 +33,7 @@ function callOnce(func) {
     return function () {
         if (!ifCalled) {
             ifCalled = true;
-            result = func(...arguments);
+            result = func(...arguments); //TODO: In what scope is result? Can we access it from(for example) line 39?
         }
         return result;
     }

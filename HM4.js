@@ -30,6 +30,7 @@ console.log(addTen(30)); // -> 40
 // Function that accepts another function as an argument and returns a new version of the function
 function callOnce(func) {
     let ifCalled = false;
+    let result;
     return function () {
         if (!ifCalled) {
             ifCalled = true;
